@@ -1,45 +1,46 @@
 package khoapham.ptp.phamtanphat.drawableresource1005;
 
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-//    Button btnTest1,btnTest2,btnTest3;
+    ImageView img;
+    int level = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        btnTest1 = findViewById(R.id.buttonTest1);
-//        btnTest2 = findViewById(R.id.buttonTest2);
-//        btnTest3 = findViewById(R.id.buttonTest3);
 
-//        btnTest1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                btnTest1.setSelected(true);
-//                btnTest2.setSelected(false);
-//                btnTest3.setSelected(false);
-//            }
-//        });
-//        btnTest2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                btnTest1.setSelected(false);
-//                btnTest2.setSelected(true);
-//                btnTest3.setSelected(false);
-//            }
-//        });
-//        btnTest3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                btnTest1.setSelected(false);
-//                btnTest2.setSelected(false);
-//                btnTest3.setSelected(true);
-//            }
-//        });
+        img = findViewById(R.id.imageview);
+
+        img.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               CountDownTimer countDownTimer = new CountDownTimer(2000,1000) {
+                   @Override
+                   public void onTick(long millisUntilFinished) {
+                       level+= 10;
+                       if (level >= 50){
+                           level = 0;
+                       }
+                       img.setImageLevel(level);
+                   }
+
+                   @Override
+                   public void onFinish() {
+                        this.start();
+                   }
+               };
+               countDownTimer.start();
+           }
+       });
+
     }
+
 }

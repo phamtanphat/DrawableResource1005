@@ -7,33 +7,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <!--Drawable State -->
-    <!--<Button-->
-    <!--android:layout_marginRight="20dp"-->
-    <!--android:id="@+id/buttonTest1"-->
-    <!--android:background="@drawable/drawable_state_button"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:textSize="20sp"-->
-    <!--android:text="Test 1"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"/>-->
-    <!--<Button-->
-    <!--android:layout_marginRight="20dp"-->
-    <!--android:id="@+id/buttonTest2"-->
-    <!--android:background="@drawable/drawable_state_button"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:textSize="20sp"-->
-    <!--android:text="Test 2"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"/>-->
-    <!--<Button-->
-    <!--android:id="@+id/buttonTest3"-->
-    <!--android:background="@drawable/drawable_state_button"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:textSize="20sp"-->
-    <!--android:text="Test 3"-->
-    <!--android:layout_width="wrap_content"-->
-
-    <!--android:layout_height="wrap_content"/>-->
-
+    <ImageView
+            android:id="@+id/imageview"
+            android:src="@drawable/drawable_level_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
 </LinearLayout>
