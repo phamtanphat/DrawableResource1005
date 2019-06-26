@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-        android:gravity="center"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <Button
-        android:layout_marginRight="20dp"
-        android:id="@+id/buttonTest1"
-        android:background="@drawable/drawable_state_button"
-        android:layout_centerInParent="true"
-        android:textSize="20sp"
-        android:text="Test 1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:layout_marginRight="20dp"
-        android:id="@+id/buttonTest2"
-        android:background="@drawable/drawable_state_button"
-        android:layout_centerInParent="true"
-        android:textSize="20sp"
-        android:text="Test 2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/buttonTest3"
-        android:background="@drawable/drawable_state_button"
-        android:layout_centerInParent="true"
-        android:textSize="20sp"
-        android:text="Test 3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <!--Drawable State -->
+    <!--<Button-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:id="@+id/buttonTest1"-->
+    <!--android:background="@drawable/drawable_state_button"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textSize="20sp"-->
+    <!--android:text="Test 1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+    <!--<Button-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:id="@+id/buttonTest2"-->
+    <!--android:background="@drawable/drawable_state_button"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textSize="20sp"-->
+    <!--android:text="Test 2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/buttonTest3"-->
+    <!--android:background="@drawable/drawable_state_button"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textSize="20sp"-->
+    <!--android:text="Test 3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
 
 </LinearLayout>
