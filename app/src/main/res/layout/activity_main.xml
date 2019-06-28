@@ -8,11 +8,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <ImageView
-            android:id="@+id/imageview"
-            android:src="@drawable/drawable_image_clip"
-            android:scaleType="fitXY"
-            android:layout_width="300dp"
-            android:layout_height="300dp"/>
+
+    <Button
+            android:background="@drawable/drawable_button_google_shape"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:text="Sign in with Google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
 </LinearLayout>
