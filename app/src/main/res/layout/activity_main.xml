@@ -4,12 +4,15 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:gravity="center"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <ImageView
             android:id="@+id/imageview"
-            android:src="@drawable/drawable_level_image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"/>
+            android:src="@drawable/drawable_image_clip"
+            android:scaleType="fitXY"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
 </LinearLayout>

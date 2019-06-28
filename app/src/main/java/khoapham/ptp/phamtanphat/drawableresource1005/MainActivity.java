@@ -1,5 +1,7 @@
 package khoapham.ptp.phamtanphat.drawableresource1005;
 
+import android.graphics.drawable.ClipDrawable;
+import android.media.Image;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -11,45 +13,21 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView img;
-    int level = 0;
+    ImageView imgClip;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        img = findViewById(R.id.imageview);
-
-        img.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-//               CountDownTimer countDownTimer = new CountDownTimer(2000,1000) {
-//                   @Override
-//                   public void onTick(long millisUntilFinished) {
-//                       level+= 10;
-//                       if (level >= 50){
-//                           level = 0;
-//                       }
-//                       img.setImageLevel(level);
-//                   }
-//
-//                   @Override
-//                   public void onFinish() {
-//                        this.start();
-//                   }
-//               };
-//               countDownTimer.start();
-               // Delay sau khoang thoi gian mo thuc thi
-               Handler handler = new Handler();
-               handler.postDelayed(new Runnable() {
-                   @Override
-                   public void run() {
-                       Log.d("BBB","Delay 1s ");
-                   }
-               },1000);
-
-           }
-       });
+        imgClip = findViewById(R.id.imageview);
+        final ClipDrawable clipDrawable = (ClipDrawable) imgClip.getDrawable();
+        clipDrawable.setLevel(0);
+        imgClip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imgClip.setImageLevel(clipDrawable.getLevel() + 1000);
+            }
+        });
 
     }
 
