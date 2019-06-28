@@ -1,6 +1,7 @@
 package khoapham.ptp.phamtanphat.drawableresource1005;
 
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,22 +23,31 @@ public class MainActivity extends AppCompatActivity {
         img.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               CountDownTimer countDownTimer = new CountDownTimer(2000,1000) {
+//               CountDownTimer countDownTimer = new CountDownTimer(2000,1000) {
+//                   @Override
+//                   public void onTick(long millisUntilFinished) {
+//                       level+= 10;
+//                       if (level >= 50){
+//                           level = 0;
+//                       }
+//                       img.setImageLevel(level);
+//                   }
+//
+//                   @Override
+//                   public void onFinish() {
+//                        this.start();
+//                   }
+//               };
+//               countDownTimer.start();
+               // Delay sau khoang thoi gian mo thuc thi
+               Handler handler = new Handler();
+               handler.postDelayed(new Runnable() {
                    @Override
-                   public void onTick(long millisUntilFinished) {
-                       level+= 10;
-                       if (level >= 50){
-                           level = 0;
-                       }
-                       img.setImageLevel(level);
+                   public void run() {
+                       Log.d("BBB","Delay 1s ");
                    }
+               },1000);
 
-                   @Override
-                   public void onFinish() {
-                        this.start();
-                   }
-               };
-               countDownTimer.start();
            }
        });
 
