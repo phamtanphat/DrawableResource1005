@@ -10,8 +10,7 @@
 
     <RatingBar
         android:stepSize="0.5"
-        android:progressBackgroundTint="#FA9500"
-        android:progressTint="#181818"
+        android:progressDrawable="@drawable/drawable_clip_ratingbar"
         android:numStars="5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
