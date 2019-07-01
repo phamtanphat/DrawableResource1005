@@ -4,17 +4,15 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:gravity="center"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <Button
-            android:background="@drawable/drawable_button_google_shape"
-            android:drawablePadding="20dp"
-            android:drawableLeft="@drawable/ic_search"
-            android:text="Sign in with Google"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
+    <RatingBar
+        android:stepSize="0.5"
+        android:progressBackgroundTint="#FA9500"
+        android:progressTint="#181818"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
